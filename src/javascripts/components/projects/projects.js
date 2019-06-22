@@ -10,7 +10,7 @@ const projectBuilder = () => {
         domString += '<div class="col-12 col-sm-12 col-md-6 col-lg-4">';
         domString += `<div class="card" id="${project.id}">`;
         domString += '<div class="card-body">';
-        domString += `<h5 class="card-title">${project.name}</h5>`;
+        domString += `<h2 class="card-title">${project.name}</h2>`;
         domString += '<p class="card-text">Another cool project for my portfolio</p>';
         domString += '<h4 class="text-center" style="border-bottom: solid 1px gray;">Authors</h4>';
         domString += '<div class="row d-flex justify-content-around">';
