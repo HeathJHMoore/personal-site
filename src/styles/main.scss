@@ -1,0 +1,269 @@
+@import "~bootstrap/scss/bootstrap";
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+
+
+body {
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #056571
+}
+
+nav {
+    display: flex;
+    border: solid 1px black;
+    background-color: white;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color: #056571;
+}
+
+nav h1 {
+    padding-left: 10px;
+    font-weight: 300;
+    font-family: 'Work Sans', sans-serif;
+}
+
+ul {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 22px;
+    padding-right: 15px;
+    font-weight: 300;
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+#bioPageContainer {
+display: flex;
+justify-content: center;
+align-items: center;
+border: solid 1px black;
+height: 650px;   
+background-color: #7e7979;
+}
+
+#bioPage {
+    width: 50%;
+    color: white;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 98px;
+    right: -425px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    justify-content: space-between;
+    height: 150px;
+    width: 470px;
+    z-index: 1;
+}
+
+.icon-bar p {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    width: 90%;
+}
+
+.icon-bar:hover {
+    right: 0px;
+}
+
+  .linkedin {
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    background: #007bb5;
+    color: white;
+    height: 33%;
+    font-size: 25px;
+  }
+
+  .linkedin i {
+      display: flex;
+      justify-content: center;
+      width: 10%;
+      border-right: solid 1px white;
+  }
+  
+  .github {
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    background:black;
+    color: azure;
+    height: 33%;
+    font-size: 25px;
+  }
+
+  .github i {
+      display: flex;
+      justify-content: center;
+      width: 10%;
+      border-right: solid 1px white;
+  }
+
+  .gmail {
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    background:#d64a3a;
+    color: white;
+    height: 33%;
+    font-size: 25px;
+  }
+
+  .gmail i {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    border-right: solid 1px white;
+  }
+
+  #technologiesContainer {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    background-color: #e7dede;
+  }
+
+
+  #technologiesPage {
+    width: 80%;
+    height: 85%;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 55px;
+  }
+
+  #technologiesHeader {
+    text-align: center;
+  }
+
+
+  #technologiesPage img {
+    height: 150px;
+  }
+
+  #badges {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+/* #navLinks {
+    display: flex;
+    justify-content: ;
+    list-style-type: none;
+    border: solid 1px black;
+    background-color: cadetblue;
+    color: azure;
+    font-size: 22px;
+    font-weight: 300;
+    padding-right: 15px; 
+} */
+
+/* #navContainer {
+    display: flex;
+    width: 50%;
+    border: solid 1px black;
+}  */
+
+/* #navItems {
+    display: flex;
+} */
+
+#projectsPage {
+    margin: 25px 25px 15px 25px;
+}
+
+.project_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px black;
+    background-color: azure;
+    padding: 8px;
+    margin-bottom: 20px;
+    transform: scale(1);
+    transition-duration: .3s;
+    border-radius: 50px;
+}
+
+.project_cards:nth-child(even):hover{
+    transform: scale(1.05);
+    transition-duration: .3s;
+    background-color:  #FF6A5C;
+    color: white;
+}
+
+.project_cards:nth-child(odd):hover{
+    transform: scale(1.05);
+    transition-duration: .3s;
+    background-color: #FF6A5C ;
+    color: white;
+}
+
+.project_cards h2 {
+    text-align: center;
+}
+
+.project_cards p {
+    text-align: center;
+}
+
+.project_cards a {
+    color: black;
+}
+
+.page-footer {
+    text-align: center;
+}
+
+footer {
+    background-color: white;
+    font-size: 18px;
+    color:#056571;
+    height: 40px;
+    padding-top: 14px;
+}
+
+
+.hide {
+    display: none !important;
+}
+
+
+.dark-primary-color    { background: #455A64; }
+.default-primary-color { background: #607D8B; }
+.light-primary-color   { background: #CFD8DC; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #00BCD4; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
+
+/* color scheme */
+.matte {background-color: #7e7979}
+.fresh {background-color: #CCDFCB}
+.watermelon {background-color: #FF6A5C}
+.teal {background-color: #056571}
