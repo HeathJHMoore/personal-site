@@ -10,17 +10,22 @@
   </head>
 
   <body>
-    <!-- Navigation -->
-    <nav>
-      <!-- TODO: Insert some sort of H1-H6 with your name here -->
-      <h1 id="Home">Heath Moore</h1>
-      <ul id="navLinks">
-          <li><a id="navToBio">Bio</a></li>
-          <li><a id="navToTechnologies">Technologies</a></li>
-          <li><a id="navToProjects">Projects</a></li>
-      </ul>
-    </nav>
-    <!-- End Navigation -->
+     
+     <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item-heath px-3" href="#">About Me <span class="sr-only">(current)</span></a>
+            <a class="nav-item-heath px-3" href="#">Projects</a>
+            <a class="nav-item-heath px-3" href="#">Contact Me</a>
+          </div>
+        </div>
+      </nav>
+  <!-- End Navigation -->
+
     <div class="icon-bar">
         <a href="https://github.com/HeathJHMoore" class="github" target="_blank"><i class="fab fa-github"></i><p>Check out my Github</p></a> 
         <a href="https://www.linkedin.com/in/heathjmoore/" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i><p>Check out my LinkedIn</p></a>
@@ -28,10 +33,15 @@
     </div>
     <!-- Primary View -->
     <div id="bioPageContainer">
-      <div class="fullPage" id="bioPage">
-        <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
-        Bio goes here
-      </div>
+        <div class="jumbotron text-left">
+            <h1 class="display-4">Hello & Welcome</h1>
+            <p class="lead">I am Heath Moore</p>
+            <div class="d-flex">
+                <a href="https://github.com/HeathJHMoore" target="_blank"><i class="fab fa-github"></i><p>Check out my Github</p></a> 
+                <a href="https://www.linkedin.com/in/heathjmoore/"  target="_blank"><i class="fab fa-linkedin"></i><p>Check out my LinkedIn</p></a>
+                <a href="https://www.linkedin.com/in/heathjmoore/" target="_blank"><i class="fa fa-envelope"></i><p>Email me</p></a>
+            </div>
+          </div>
     </div>
     <div id="technologiesContainer">
       <div class="fullPage" id="technologiesPage">
