@@ -27,6 +27,7 @@ body {
 .jumbotron {
     background-color: transparent;
     color: white;
+    font-weight: 500;
     margin-left: 3%;
     .lead {
         font-size: 100px;
@@ -70,7 +71,7 @@ ul li:hover {
 display: flex;
 justify-content: flex-start;
 align-items: center;
-height: 1000px !important;   
+height: 100vh !important;   
 background-color: #7e7979;
 background-image: url(../../images/heath_asb.jpg);
 background-attachment: fixed;
@@ -110,61 +111,96 @@ background-repeat: no-repeat;
     right: 0px;
 }
 
+//   .linkedin {
+//     border: solid 1px black;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     text-decoration: none;
+//     background: #007bb5;
+//     color: white;
+//     height: 33%;
+//     font-size: 25px;
+//   }
+
+//   .linkedin i {
+//       display: flex;
+//       justify-content: center;
+//       width: 10%;
+//       border-right: solid 1px white;
+//   }
+
   .linkedin {
-    border: solid 1px black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    background: #007bb5;
-    color: white;
-    height: 33%;
-    font-size: 25px;
+    color:white;
+    font-size: 45px;
+    transition-duration: 500ms;
   }
 
-  .linkedin i {
-      display: flex;
-      justify-content: center;
-      width: 10%;
-      border-right: solid 1px white;
+  .linkedin:hover {
+      color:black;
+      transition-duration: 500ms;
   }
+
   
+//   .github {
+//     border: solid 1px black;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     text-decoration: none;
+//     background:black;
+//     color: azure;
+//     height: 33%;
+//     font-size: 25px;
+//   }
+
+//   .github i {
+//       display: flex;
+//       justify-content: center;
+//       width: 10%;
+//       border-right: solid 1px white;
+//   }
+
+
   .github {
-    border: solid 1px black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    background:black;
     color: azure;
-    height: 33%;
-    font-size: 25px;
+    font-size: 45px;
+    transition-duration: 500ms;
   }
 
-  .github i {
-      display: flex;
-      justify-content: center;
-      width: 10%;
-      border-right: solid 1px white;
+  .github:hover {
+      color:black;
+      transition-duration: 500ms;
   }
+
+//   .gmail {
+//     border: solid 1px black;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     text-decoration: none;
+//     background:#d64a3a;
+//     color: white;
+//     height: 33%;
+//     font-size: 25px;
+//   }
+
+//   .gmail i {
+//     display: flex;
+//     justify-content: center;
+//     width: 10%;
+//     border-right: solid 1px white;
+//   }
 
   .gmail {
-    border: solid 1px black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    background:#d64a3a;
     color: white;
-    height: 33%;
-    font-size: 25px;
+    font-size: 45px;
+    transition-duration: 500ms;
   }
 
-  .gmail i {
-    display: flex;
-    justify-content: center;
-    width: 10%;
-    border-right: solid 1px white;
+  .gmail:hover {
+      color:black;
+      transition-duration: 500ms;
   }
 
   #technologiesContainer {
