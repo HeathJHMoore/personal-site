@@ -9,22 +9,57 @@ body {
   background-color: #056571
 }
 
-nav {
-    display: flex;
-    border: solid 1px black;
-    background-color: white;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    color: #056571;
+.navbar {
+    background-color: transparent;
+    color: white;
 }
 
-nav h1 {
-    padding-left: 10px;
-    font-weight: 300;
-    font-family: 'Work Sans', sans-serif;
+.nav-item-heath {
+    color: white;
+    font-size: 25px;
+    border-right: solid white 3px;
 }
+
+.nav-item-heath:hover {
+    color:white;
+}
+
+.navbar-toggler-icon {
+    color:white !important;
+}
+
+#navHamburger {
+    font-size: 40px;
+}
+
+.jumbotron {
+    background-color: transparent;
+    // background: rgba(29, 30, 31, .3);
+    color: white;
+    font-weight: 500;
+    .lead {
+        font-size: 85px;
+    }
+}
+
+
+
+// nav {
+//     display: flex;
+//     border: solid 1px black;
+//     background-color: none;
+//     justify-content: space-between;
+//     position: sticky;
+//     top: 0;
+//     z-index: 1;
+//     color: #056571;
+// }
+
+// nav h1 {
+//     padding-left: 10px;
+//     font-weight: 300;
+//     font-family: 'Work Sans', sans-serif;
+// }
 
 ul {
     display: flex;
@@ -42,11 +77,16 @@ ul li:hover {
 
 #bioPageContainer {
 display: flex;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
-border: solid 1px black;
-height: 650px;   
+height: 100vh !important;   
 background-color: #7e7979;
+background-image: url(../../images/heath_asb.jpg);
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+opacity: .9;
+background-repeat: no-repeat;
 }
 
 #bioPage {
@@ -79,61 +119,96 @@ background-color: #7e7979;
     right: 0px;
 }
 
+//   .linkedin {
+//     border: solid 1px black;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     text-decoration: none;
+//     background: #007bb5;
+//     color: white;
+//     height: 33%;
+//     font-size: 25px;
+//   }
+
+//   .linkedin i {
+//       display: flex;
+//       justify-content: center;
+//       width: 10%;
+//       border-right: solid 1px white;
+//   }
+
   .linkedin {
-    border: solid 1px black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    background: #007bb5;
-    color: white;
-    height: 33%;
-    font-size: 25px;
+    color:white;
+    font-size: 45px;
+    transition-duration: 500ms;
   }
 
-  .linkedin i {
-      display: flex;
-      justify-content: center;
-      width: 10%;
-      border-right: solid 1px white;
+  .linkedin:hover {
+      color:black;
+      transition-duration: 500ms;
   }
+
   
+//   .github {
+//     border: solid 1px black;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     text-decoration: none;
+//     background:black;
+//     color: azure;
+//     height: 33%;
+//     font-size: 25px;
+//   }
+
+//   .github i {
+//       display: flex;
+//       justify-content: center;
+//       width: 10%;
+//       border-right: solid 1px white;
+//   }
+
+
   .github {
-    border: solid 1px black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    background:black;
     color: azure;
-    height: 33%;
-    font-size: 25px;
+    font-size: 45px;
+    transition-duration: 500ms;
   }
 
-  .github i {
-      display: flex;
-      justify-content: center;
-      width: 10%;
-      border-right: solid 1px white;
+  .github:hover {
+      color:black;
+      transition-duration: 500ms;
   }
+
+//   .gmail {
+//     border: solid 1px black;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     text-decoration: none;
+//     background:#d64a3a;
+//     color: white;
+//     height: 33%;
+//     font-size: 25px;
+//   }
+
+//   .gmail i {
+//     display: flex;
+//     justify-content: center;
+//     width: 10%;
+//     border-right: solid 1px white;
+//   }
 
   .gmail {
-    border: solid 1px black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    background:#d64a3a;
     color: white;
-    height: 33%;
-    font-size: 25px;
+    font-size: 45px;
+    transition-duration: 500ms;
   }
 
-  .gmail i {
-    display: flex;
-    justify-content: center;
-    width: 10%;
-    border-right: solid 1px white;
+  .gmail:hover {
+      color:black;
+      transition-duration: 500ms;
   }
 
   #technologiesContainer {
