@@ -16,7 +16,7 @@ body {
 
 .nav-item-heath {
     color: white;
-    font-size: 28px;
+    font-size: 25px;
     border-right: solid white 3px;
 }
 
@@ -24,13 +24,21 @@ body {
     color:white;
 }
 
+.navbar-toggler-icon {
+    color:white !important;
+}
+
+#navHamburger {
+    font-size: 40px;
+}
+
 .jumbotron {
     background-color: transparent;
+    // background: rgba(29, 30, 31, .3);
     color: white;
     font-weight: 500;
-    margin-left: 3%;
     .lead {
-        font-size: 100px;
+        font-size: 85px;
     }
 }
 
@@ -77,7 +85,7 @@ background-image: url(../../images/heath_asb.jpg);
 background-attachment: fixed;
 background-size: cover;
 background-position: center;
-opacity: .7;
+opacity: .9;
 background-repeat: no-repeat;
 }
 
