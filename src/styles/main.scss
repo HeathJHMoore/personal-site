@@ -326,6 +326,21 @@ footer {
     padding-top: 14px;
 }
 
+.techIcons {
+    font-size: 150px;
+    transition-duration: .2s;
+    color:black;
+    background-color: transparent;
+    border-radius: 25%;
+}
+
+.techIcons:hover {
+    transform: scale(1.05);
+    transition-duration: .2s;
+    color:white;
+    background-color: black;
+    padding: 0px;
+}
 
 .hide {
     display: none !important;
