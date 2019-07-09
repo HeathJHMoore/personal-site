@@ -82,7 +82,7 @@ align-items: center;
 height: 100vh !important;   
 background-color: #7e7979;
 // background-image: url(../../images/heath_asb.jpg);
-background-image: linear-gradient(rgba(12, 11, 11, 0.550), rgba(26, 20, 20, 0.750)), url(../../images//heath_asb.jpg);
+background-image: linear-gradient(rgba(12, 11, 11, 0.550), rgba(26, 20, 20, 0.700)), url(../../images//heath_asb.jpg);
 background-attachment: fixed;
 background-size: cover;
 background-position: center;
@@ -142,10 +142,13 @@ background-repeat: no-repeat;
   .linkedin {
     color:white;
     font-size: 45px;
+    transition-duration: .1s;
   }
 
   .linkedin:hover {
       color:white;
+      transform: scale(1.2);
+      transition-duration: .1s;
   }
 
   
@@ -172,10 +175,13 @@ background-repeat: no-repeat;
   .github {
     color: white;
     font-size: 45px;
+    transition-duration: .1s;
   }
 
   .github:hover {
       color: white;
+      transform: scale(1.2);
+      transition-duration: .1s;
   }
 
 //   .gmail {
@@ -200,10 +206,13 @@ background-repeat: no-repeat;
   .gmail {
     color: white;
     font-size: 45px;
+    transition-duration: .1s;
   }
 
   .gmail:hover {
       color:white;
+      transform: scale(1.2);
+      transition-duration: .1s;
   }
 
   #technologiesContainer {
