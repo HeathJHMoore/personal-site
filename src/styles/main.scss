@@ -216,11 +216,17 @@ background-repeat: no-repeat;
       transition-duration: .1s;
   }
 
+  #aboutMeContainer {
+      background-color: grey;
+  }
+
   #technologiesContainer {
-    height: 600px;
+    height: auto;
     display: flex;
     justify-content: center;
-    background-color: #e7dede;
+    // background: linear-gradient(180deg, silver);
+    background: rgb(218, 217, 217);
+    padding: 15px;
   }
 
 
@@ -236,7 +242,15 @@ background-repeat: no-repeat;
 
   #technologiesHeader {
     text-align: center;
+    padding: 3px;
+    color:black;
+    border-bottom: 5px solid;
+    border-image-source: linear-gradient(125deg, black, transparent);
+    border-image-slice: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
   }
+   
 
 
   #technologiesPage img {
@@ -249,6 +263,8 @@ background-repeat: no-repeat;
       justify-content: space-between;
       flex-wrap: wrap;
   }
+
+  
 /* #navLinks {
     display: flex;
     justify-content: ;
@@ -327,23 +343,61 @@ footer {
 }
 
 .techIcons {
-    font-size: 150px;
-    transition-duration: .2s;
     color:black;
-    background-color: transparent;
-    border-radius: 25%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
-.techIcons:hover {
-    transform: scale(1.05);
-    transition-duration: .2s;
-    color:white;
-    background-color: black;
-    padding: 0px;
+.techIcons img {
+    // font-size: 150px;
+    // transition-duration: .2s;
+    // color: black;
+    // color:black;
+    // background-color: transparent;
+    // border-radius: 25%;
+    transition-duration: .1s;
+}
+
+.techIcons img:hover {
+    transform: scale(1.15);
+    transition-duration: .1s;
 }
 
 .hide {
     display: none !important;
+}
+
+#htmlLogo {
+    color:black;
+    transition-duration: .2s;
+}
+
+#htmlLogo:hover {
+    color: rgb(228,77,45);
+    transform: scale(1.10);
+    transition-duration: .2s;
+}
+
+#cssLogo {
+    color:black;
+    transition-duration: .2s;
+}
+
+#cssLogo:hover {
+    color: rgb(56,157,215);
+    transform: scale(1.10);
+    transition-duration: .2s;
+}
+
+#javascriptLogo {
+    color:black;
+    transition-duration: .2s;
+}
+
+#javascriptLogo:hover {
+    color: rgb(223, 206, 82);
+    transform: scale(1.10);
+    transition-duration: .2s;
 }
 
 /* Underline From Center */
