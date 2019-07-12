@@ -33,6 +33,16 @@ body {
     font-size: 40px;
 }
 
+.fadeOutBackground {
+    background-color: transparent;
+    transition-duration: .6s;
+}
+
+.fadeInBackground {
+    background-color: black;
+    transition-duration: .6s;
+}
+
 .jumbotron {
     background-color: transparent;
     // background: rgba(29, 30, 31, .3);
@@ -76,6 +86,29 @@ ul li:hover {
     cursor: pointer;
 }
 
+#aboutMeContainer {
+    background-color: white;
+}
+
+#aboutMeBio {
+    background-color: transparent;
+    font-size: 22px;
+    border: none;
+    color: black
+}
+
+#aboutMeBioContainer {
+    display: flex;
+    align-items: center;
+}
+
+#aboutImageDiv {
+    img {
+        border-radius: 5%;
+        margin-bottom: 10px;
+    }
+}
+
 #bioPageContainer {
 display: flex;
 justify-content: flex-start;
@@ -83,7 +116,7 @@ align-items: center;
 height: 100vh !important;   
 background-color: #7e7979;
 // background-image: url(../../images/heath_asb.jpg);
-background-image: linear-gradient(rgba(12, 11, 11, 0.550), rgba(26, 20, 20, 0.700)), url(../../images//heath_asb.jpg);
+background-image: linear-gradient(240deg,rgba(12, 11, 11, 0.000), rgba(26, 20, 20, .900)), url(../../images//heath_asb.jpg);
 background-attachment: fixed;
 background-size: cover;
 background-position: center;
@@ -217,15 +250,47 @@ background-repeat: no-repeat;
   }
 
   #aboutMeContainer {
-      background-color: grey;
+    //   background-color: rgb(200,82,111);
+    //   background-color: rgb(80,175,207);
+    background-color: white;
+    color:black;
+    background-image: url(../../images/coolio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+
+  .line1 {
+    border: solid 1px black;
+    width: 50%;
+    height: 50%;
+    border-bottom: 15px solid rgb(200,82,111);
+    -webkit-transform:
+        translateY(0px)
+        translateX(0px)
+        rotate(-35deg); 
+    position: absolute;
+    /* top: -20px; */
+}
+.line2 {
+    border: solid 1px black;
+    width: 112px;
+    height: 47px;
+    border-bottom: 1px solid green;
+    -webkit-transform:
+        translateY(20px)
+        translateX(5px)
+        rotate(-26deg);
+    position: absolute;
+    top: -33px;
+    left: -13px;
+}
 
   #technologiesContainer {
     height: auto;
     display: flex;
     justify-content: center;
     // background: linear-gradient(180deg, silver);
-    background: rgb(218, 217, 217);
+    background: rgba(206, 205, 204, 0.87);
     padding: 15px;
   }
 
@@ -287,8 +352,9 @@ background-repeat: no-repeat;
     display: flex;
 } */
 
+
 #projectsPage {
-    margin: 25px 25px 15px 25px;
+    background-color: rgb(80,175,207);
 }
 
 .project_cards {
@@ -360,6 +426,7 @@ footer {
 
 .techIcons img:hover {
     transform: scale(1.15);
+    transform: translateY(-20px);
     transition-duration: .1s;
 }
 
@@ -399,6 +466,15 @@ footer {
     transform: scale(1.10);
     transition-duration: .2s;
 }
+
+.hideMe {
+    opacity: 0;
+}
+
+// .fadeIn {
+//     opacity: 1;
+//     transition-duration: .25s;
+// }
 
 /* Underline From Center */
 .hvr-underline-from-center {

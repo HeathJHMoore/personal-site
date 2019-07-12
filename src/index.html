@@ -13,7 +13,7 @@
   <body>
      
      <!-- Navigation -->
-     <nav class="navbar navbar-expand-lg fixed-top">
+     <nav id="myNavbar" class="navbar navbar-expand-lg fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fa fa-bars" id="navHamburger"></i></span>
         </button>
@@ -45,18 +45,24 @@
           </div>
     </div>
     <div id="aboutMeContainer" >
-      <div class="row d-flex justify-content-between">
-          <div class="col-4">Hello all! My name is Heath Moore and I'm a software developer based in Nashville Tennesse. My interest in software development all started
-            with my very first job out of college. After graduating from Vanderbilt University with a useless and expensive liberal arts degree, I eagerly started my working career as a business intelligence analyst for a local healthcare startup, Aspire Healthcare. My full intention was to spend two gap years working in Nashville before applying to medical school but life had different things in store for me.
-            Through my role at Aspire, I was exposed to a variety of technologies that peaked my curiosity in a way that nothing in college ever had. I found myself constantly dabbling in Python and SQL and ultimately became enamored by the rush of fulfillment I felt after conquering a difficult query or automating a tedious task at work.
-            This newfound enfatution with software left me utterly confused about my career ambitions as I found myself torn between my old love of medicine and my new love for technology. After some agonizing discernment, I ultimately decided to blend my two loves and begin my pivot into the healthcare technology sector.
-            This led me to enroll at the Nashville Software School where I am currently spending a full year learning the fundamentals of full stack software development. 
-            
-            Outside of work and tech, I am an avid consumer of OVO Sound music and love winding down any night with a nice episode of The Joy of Painting with Bob Ross. I consider myself a moderate fitness enthusiast and love playing finger style guitar when I catch a free moment in the day.
-            I live a life blessed with many great friends and spend most of my weekends in revelry with them.
-            If you have any advice for a youngblood like myself, feel free to reach out to me with any nuggets of wisdom that you have found beneficial in this joyful yet tumultous journey that we call life.
+      <div class="row d-flex justify-content-around">
+          <div class="col-12 col-xl-5 m-4" id="aboutMeBioContainer">
+          <div class="card p-2" id="aboutMeBio">
+            <div class="col-12 mx-auto">
+            <strong style="font-size: 28px; color: rgb(67, 108, 185)">Hey There!</strong>
+            <br>
+            <br>
+            My name is Heath Moore and I'm a software developer based in Nashville, Tennessee. Once a pre-med student, I have now pivoted my career ambitions towards tech after working on a healthcare startup's IT team in my first job out of college.
+            I'm currently a student at the Nashville Software School where im learning the fundamentals of full stack software development. I love solving real, human problems with code and hope to combine my love of technology and medicine by working in the healthcare technology sector.
+            <br>
+            <br>
+            If you want to work with me or make a new dev-friend in Nashville, feel free to reach out to me via any of the social media links listed below!
           </div>
-          <div class="col-4">Hey</div>
+          </div>
+        </div>
+          <div class="col-10 col-md-3 text-center" id="aboutImageDiv">
+            <!-- <img class="img-fluid" src="../images//IMG_1503.jpg" alt=""/> -->
+          </div>
       </div>
     </div>
     <div id="technologiesContainer">
@@ -107,7 +113,7 @@
               <img src="../images/npm.png">
               <h2>NPM</h2>
             </div>
-            <div class="text-center techIcons col-6 col-md-3 col-xl-3 my-2 p-0">
+            <div id="sql" class="text-center techIcons col-6 col-md-3 col-xl-3 my-2 p-0">
               <img src="../images/ssms.png">
               <h2>SQL</h2>
             </div>
