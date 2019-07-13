@@ -11,7 +11,6 @@ const scrollListener = () => {
       document.getElementById('myNavbar').classList.add('fadeOutBackground');
     }
   });
-  window.addEventListener('scroll', scrollFadeIn);
 };
 
 export default { scrollListener };
