@@ -116,7 +116,8 @@ align-items: center;
 height: 100vh !important;   
 background-color: #7e7979;
 // background-image: url(../../images/heath_asb.jpg);
-background-image: linear-gradient(240deg,rgba(12, 11, 11, 0.100), rgba(26, 20, 20, .900)), url(../../images//heath_asb.jpg);
+// background-image: linear-gradient(240deg,rgba(12, 11, 11, 0.100), rgba(26, 20, 20, .900)), url(../../images//heath_asb.jpg);
+background-image: linear-gradient(240deg,rgba(12, 11, 11, 0.100), rgba(26, 20, 20, .900)), url(../../images//new-teeth.jpg);
 background-attachment: fixed;
 background-size: cover;
 background-position: center;
@@ -216,6 +217,34 @@ background-repeat: no-repeat;
       color: white;
       transform: scale(1.2);
       transition-duration: .1s;
+  }
+
+  .bioSocialDark {
+      color:black;
+      font-size: 50px;
+      text-align: center;
+  }
+
+  .bioSocialDark:hover {
+      color: white;
+      transition-duration: .4s;
+  }
+
+  .bioSocialBG {
+      background-color: transparent;
+      border-radius: 50%;
+      transition-duration: .4s;
+      margin: 5px;
+  }
+
+  .bioSocialBG:hover {
+    //   background-color: rgb(200,82,111);
+      background-color: rgb(80,175,207);
+      transition-duration: .4s;
+      padding: 0px;
+      .bioSocialDark {
+          color:white;
+      }
   }
 
 //   .gmail {
@@ -444,6 +473,10 @@ footer {
     transition-duration: .2s;
 }
 
+.Quote {
+    font-size: 20px;
+}
+
 .hideMe {
     opacity: 0;
 }
@@ -500,3 +533,4 @@ footer {
 .fresh {background-color: #CCDFCB}
 .watermelon {background-color: #FF6A5C}
 .teal {background-color: #056571}
+

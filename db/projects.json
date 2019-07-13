@@ -1,0 +1,17 @@
+{
+  "project1" : {
+    "name": "Chatty Baratheon",
+    "url": "https://baratheon-a378d.firebaseapp.com/",
+    "img": "https://raw.githubusercontent.com/nss-evening-cohort-9/chatty-baratheon/master/src/assets/Screen%20Shot%202019-05-13%20at%203.21.26%20PM.png"
+  },
+  "project2" : {
+    "name": "Movie History",
+    "url": "https://movie-history-5aa02.firebaseapp.com/",
+    "img": "https://raw.githubusercontent.com/HeathJHMoore/Movie-History/master/Screen%20Shot%202019-06-15%20at%209.47.48%20AM.png"
+  },
+  "project3" : {
+    "name": "Peanut",
+    "url": "https://nutshell-peanut.firebaseapp.com/",
+    "img": "https://raw.githubusercontent.com/nss-evening-cohort-9/nutshell-peanut/master/assets/screenshots/dashboard.png"
+  }
+}

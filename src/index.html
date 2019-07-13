@@ -19,8 +19,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item-heath px-3 hvr-underline-from-center" href="#">About Me <span class="sr-only">(current)</span></a>
-            <a class="nav-item-heath px-3 hvr-underline-from-center" href="#">Projects</a>
+            <a class="nav-item-heath px-3 hvr-underline-from-center" href="#aboutMeBioContainer">About Me <span class="sr-only">(current)</span></a>
+            <a class="nav-item-heath px-3 hvr-underline-from-center" href="#projectsPage">Projects</a>
             <a class="nav-item-heath px-3 hvr-underline-from-center" href="#">Contact Me</a>
           </div>
         </div>
@@ -35,8 +35,9 @@
     <!-- Primary View -->
     <div id="bioPageContainer">
         <div class="jumbotron text-left row">
-            <h1 class="col-12 display-4">Hello & Welcome</h1>
+            <h1 class="col-12 display-4">Hello and Welcome,</h1>
             <p class="lead col-12">I'm Heath Moore</p>
+            <p id="quote" class="Quote col-12">"Talent is a pursued interest" - Bob Ross</p>
             <div class="row d-flex justify-content-between ml-1">
                 <a href="https://github.com/HeathJHMoore" class="github col-4 col-md-3 my-2" target="_blank"><i class="fab fa-github"></i></a> 
                 <a href="https://www.linkedin.com/in/heathjmoore/"  class="linkedin col-4 col-md-3 my-2" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -58,10 +59,18 @@
             <br>
             If you want to work with me or make a new dev-friend in Nashville, feel free to reach out to me via any of the social media links listed below!
           </div>
+          <div class="d-flex justify-content-start">
+              <div class="bioSocialBG">
+              <a href="https://github.com/HeathJHMoore" class="bioSocialDark col-4 col-md-3 my-2" target="_blank"><i class="fab fa-github"></i></a> 
+              </div>
+              <div class="bioSocialBG">
+              <a href="https://www.linkedin.com/in/heathjmoore/"  class="bioSocialDark col-4 col-md-3 my-2" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
           </div>
         </div>
           <div class="col-10 col-md-3 text-center d-flex" id="aboutImageDiv">
-            <img class="" src="../images//nerd-portrait.jpg" alt="" height="500px"/>
+            <img class="mb-3" src="../images//nerd-portrait.jpg" alt="" height="500px"/>
           </div>
       </div>
     </div>
@@ -128,19 +137,19 @@
           </div>
       </div>
     </div>
-    <div class="fullPage" id="projectsPage">
+    <div class="fullPage p-3" id="projectsPage">
       <h1 class="text-center mb-4" style="color: white;">My Projects</h1>
-      <div id="projectsContainer" class="row d-flex justify-content-between"></div>
+      <div id="projectsContainer" class="row d-flex justify-content-around mt-2"></div>
     </div>
     <!-- End Primary View -->
 
     <!-- Footer -->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer"> -->
       <!-- TODO: Fill in contact info here: Include things like email, LinkedIn, Twitter and GitHub links. -->
-      HeathJHMoore@gmail.com | 256-783-0959 |
-      https://www.linkedin.com/in/heathjmoore/ |
-      https://github.com/HeathJHMoore/
-    </footer>
+      <!-- HeathJHMoore@gmail.com | 256-783-0959 | -->
+      <!-- https://www.linkedin.com/in/heathjmoore/ | -->
+      <!-- https://github.com/HeathJHMoore/ -->
+    <!-- </footer> -->
     <!-- End Footer -->
   </body>
 </html>
