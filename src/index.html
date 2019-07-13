@@ -7,20 +7,21 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Work+Sans:300,400,500" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <title>Heath Moore</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
 
   <body>
      
      <!-- Navigation -->
-     <nav class="navbar navbar-expand-lg fixed-top">
+     <nav id="myNavbar" class="navbar navbar-expand-lg fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fa fa-bars" id="navHamburger"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item-heath px-3" href="#">About Me <span class="sr-only">(current)</span></a>
-            <a class="nav-item-heath px-3" href="#">Projects</a>
-            <a class="nav-item-heath px-3" href="#">Contact Me</a>
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item-heath px-3 hvr-underline-from-center" href="#aboutMeBioContainer">About Me <span class="sr-only">(current)</span></a>
+            <a class="nav-item-heath px-3 hvr-underline-from-center" href="#projectsPage">Projects</a>
+            <a class="nav-item-heath px-3 hvr-underline-from-center" href="#">Contact Me</a>
           </div>
         </div>
       </nav>
@@ -34,8 +35,9 @@
     <!-- Primary View -->
     <div id="bioPageContainer">
         <div class="jumbotron text-left row">
-            <h1 class="col-12 display-4">Hello & Welcome</h1>
+            <h1 class="col-12 display-4">Hello and Welcome,</h1>
             <p class="lead col-12">I'm Heath Moore</p>
+            <p id="quote" class="Quote col-12">"Talent is a pursued interest" - Bob Ross</p>
             <div class="row d-flex justify-content-between ml-1">
                 <a href="https://github.com/HeathJHMoore" class="github col-4 col-md-3 my-2" target="_blank"><i class="fab fa-github"></i></a> 
                 <a href="https://www.linkedin.com/in/heathjmoore/"  class="linkedin col-4 col-md-3 my-2" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -43,30 +45,111 @@
             </div>
           </div>
     </div>
-    <div id="technologiesContainer">
-      <div class="fullPage" id="technologiesPage">
-          <h2 id="technologiesHeader">Technologies</h2>
-          <div id="badges">
-            <img src="./assets/600px-HTML5_Badge.svg.png">
-            <img src="./assets/CSS.3.svg">
-            <img src="./assets/js-brands.svg">
-            <img src="./assets/python-brands.svg">
+    <div id="aboutMeContainer" >
+      <div class="row d-flex justify-content-around">
+          <div class="col-12 col-xl-6 m-4" id="aboutMeBioContainer">
+          <div class="card p-2" id="aboutMeBio">
+            <div class="col-12 mx-auto">
+            <strong style="font-size: 28px; color: rgb(67, 108, 185)">Hey There!</strong>
+            <br>
+            <br>
+            My name is Heath Moore and I'm a software developer based in Nashville, Tennessee. Once a pre-med student, I have now pivoted my career ambitions towards tech after working on a healthcare startup's IT team in my first job out of college.
+            I'm currently a student at the Nashville Software School where im learning the fundamentals of full stack software development. I love solving real, human problems with code and hope to combine my love of technology and medicine by working in the healthcare technology sector.
+            <br>
+            <br>
+            If you want to work with me or make a new dev-friend in Nashville, feel free to reach out to me via any of the social media links listed below!
+          </div>
+          <div class="d-flex justify-content-start">
+              <div class="bioSocialBG">
+              <a href="https://github.com/HeathJHMoore" class="bioSocialDark col-4 col-md-3 my-2" target="_blank"><i class="fab fa-github"></i></a> 
+              </div>
+              <div class="bioSocialBG">
+              <a href="https://www.linkedin.com/in/heathjmoore/"  class="bioSocialDark col-4 col-md-3 my-2" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
+          </div>
+        </div>
+          <div class="col-10 col-md-3 text-center d-flex" id="aboutImageDiv">
+            <img class="mb-3" src="../images//nerd-portrait.jpg" alt="" height="500px"/>
           </div>
       </div>
     </div>
-    <div class="fullPage" id="projectsPage">
+    <div id="technologiesContainer">
+      <div class="fullPage col" id="technologiesPage">
+          <h1 class="row bot-left" id="technologiesHeader">Technologies</h1>
+          <div id="badges" class="row justify-content-center">
+            <!-- <div class="text-center techIcons col-6 col-md-3 col-xl-2 my-2 p-0">
+            <i class="fab fa-html5" id="htmlLogo"></i>
+            <h2>HTML5</h2>
+            </div>
+            <div class="text-center techIcons col-6 col-md-3 col-xl-2 my-2 p-0">
+            <i class="fab fa-css3-alt" id="cssLogo"></i>
+            <h2>CSS3</h2>
+            </div>
+            <div class="text-center techIcons col-6 col-md-3 col-xl-2 my-2 p-0">
+            <i class="fab fa-js" id="javascriptLogo"></i>
+            <h2>Javascript</h2>
+            </div>
+            <div class="text-center techIcons col-6 col-md-3 col-xl-2 my-2 p-0">
+            <i class="fab fa-python" id="pythonLogo"></i>
+            <h2>Python</h2>
+            </div> -->
+            <div class="text-center techIcons col-6 col-md-3 col-xl-3 my-4 p-0">
+              <img src="../images/html.png">
+              <h2>HTML5</h2>
+            </div>
+            <div class="text-center techIcons col-6 col-md-3 col-xl-3 my-4 p-0">
+              <img src="../images/css.png">
+              <h2>CSS3</h2>
+            </div>
+            <div class="text-center techIcons col-6 col-md-3 col-xl-3 my-4 p-0">
+              <img src="../images/js.png">
+              <h2>Javascript</h2>
+            </div>
+            <div class="text-center techIcons col-6 col-md-3 col-xl-3 my-4 p-0">
+              <img src="../images/react.png">
+              <h2>React</h2>
+            </div>
+            <div class="text-center techIcons col-6 col-md-3 col-xl-3 my-4 p-0">
+              <img src="../images/git.png">
+              <h2>Git</h2>
+            </div>
+            <div class="text-center techIcons col-6 col-md-3 col-xl-3 my-4 p-0">
+              <img src="../images/github.png">
+              <h2>Github</h2>
+            </div>
+            <div class="text-center techIcons col-6 col-md-3 col-xl-3 my-4 p-0">
+              <img src="../images/npm.png">
+              <h2>NPM</h2>
+            </div>
+            <div id="sql" class="text-center techIcons col-6 col-md-3 col-xl-3 my-4 p-0">
+              <img src="../images/ssms.png">
+              <h2>SQL</h2>
+            </div>
+            <div class="text-center techIcons col-6 col-md-3 col-xl-3 my-4 p-0">
+              <img src="../images/vscode.png">
+              <h2>VSCode</h2>
+            </div>
+            <div class="text-center techIcons col-6 col-md-3 col-xl-3 my-4 p-0">
+              <img src="../images/webpack.png">
+              <h2>Webpack</h2>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="fullPage p-3" id="projectsPage">
       <h1 class="text-center mb-4" style="color: white;">My Projects</h1>
-      <div id="projectsContainer" class="row d-flex justify-content-between"></div>
+      <div id="projectsContainer" class="row d-flex justify-content-around mt-2"></div>
     </div>
     <!-- End Primary View -->
 
     <!-- Footer -->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer"> -->
       <!-- TODO: Fill in contact info here: Include things like email, LinkedIn, Twitter and GitHub links. -->
-      HeathJHMoore@gmail.com | 256-783-0959 |
-      https://www.linkedin.com/in/heathjmoore/ |
-      https://github.com/HeathJHMoore/
-    </footer>
+      <!-- HeathJHMoore@gmail.com | 256-783-0959 | -->
+      <!-- https://www.linkedin.com/in/heathjmoore/ | -->
+      <!-- https://github.com/HeathJHMoore/ -->
+    <!-- </footer> -->
     <!-- End Footer -->
   </body>
 </html>

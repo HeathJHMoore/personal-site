@@ -6,7 +6,8 @@
 body {
   margin: 0px;
   font-family: 'Raleway', sans-serif;
-  background-color: #056571
+//   background-color: #056571;
+background-color: grey;
 }
 
 .navbar {
@@ -16,12 +17,13 @@ body {
 
 .nav-item-heath {
     color: white;
-    font-size: 25px;
+    font-size: 23px;
     border-right: solid white 3px;
 }
 
 .nav-item-heath:hover {
     color:white;
+    text-decoration: none;
 }
 
 .navbar-toggler-icon {
@@ -30,6 +32,16 @@ body {
 
 #navHamburger {
     font-size: 40px;
+}
+
+.fadeOutBackground {
+    background-color: transparent;
+    transition-duration: .6s;
+}
+
+.fadeInBackground {
+    background-color: black;
+    transition-duration: .6s;
 }
 
 .jumbotron {
@@ -75,13 +87,37 @@ ul li:hover {
     cursor: pointer;
 }
 
+#aboutMeContainer {
+    background-color: white;
+}
+
+#aboutMeBio {
+    background-color: transparent;
+    font-size: 28px;
+    border: none;
+    color: black
+}
+
+
+#aboutMeBioContainer {
+    display: flex;
+    align-items: center;
+}
+
+#aboutImageDiv {
+    align-items: center;
+    justify-content: center;
+}
+
 #bioPageContainer {
 display: flex;
 justify-content: flex-start;
 align-items: center;
 height: 100vh !important;   
 background-color: #7e7979;
-background-image: url(../../images/heath_asb.jpg);
+// background-image: url(../../images/heath_asb.jpg);
+// background-image: linear-gradient(240deg,rgba(12, 11, 11, 0.100), rgba(26, 20, 20, .900)), url(../../images//heath_asb.jpg);
+background-image: linear-gradient(240deg,rgba(12, 11, 11, 0.100), rgba(26, 20, 20, .900)), url(../../images//new-teeth.jpg);
 background-attachment: fixed;
 background-size: cover;
 background-position: center;
@@ -141,12 +177,13 @@ background-repeat: no-repeat;
   .linkedin {
     color:white;
     font-size: 45px;
-    transition-duration: 500ms;
+    transition-duration: .1s;
   }
 
   .linkedin:hover {
-      color:black;
-      transition-duration: 500ms;
+      color:white;
+      transform: scale(1.2);
+      transition-duration: .1s;
   }
 
   
@@ -171,14 +208,43 @@ background-repeat: no-repeat;
 
 
   .github {
-    color: azure;
+    color: white;
     font-size: 45px;
-    transition-duration: 500ms;
+    transition-duration: .1s;
   }
 
   .github:hover {
+      color: white;
+      transform: scale(1.2);
+      transition-duration: .1s;
+  }
+
+  .bioSocialDark {
       color:black;
-      transition-duration: 500ms;
+      font-size: 50px;
+      text-align: center;
+  }
+
+  .bioSocialDark:hover {
+      color: white;
+      transition-duration: .4s;
+  }
+
+  .bioSocialBG {
+      background-color: transparent;
+      border-radius: 50%;
+      transition-duration: .4s;
+      margin: 5px;
+  }
+
+  .bioSocialBG:hover {
+    //   background-color: rgb(200,82,111);
+      background-color: rgb(80,175,207);
+      transition-duration: .4s;
+      padding: 0px;
+      .bioSocialDark {
+          color:white;
+      }
   }
 
 //   .gmail {
@@ -203,19 +269,34 @@ background-repeat: no-repeat;
   .gmail {
     color: white;
     font-size: 45px;
-    transition-duration: 500ms;
+    transition-duration: .1s;
   }
 
   .gmail:hover {
-      color:black;
-      transition-duration: 500ms;
+      color:white;
+      transform: scale(1.2);
+      transition-duration: .1s;
+  }
+
+  #aboutMeContainer {
+    //   background-color: rgb(200,82,111);
+    //   background-color: rgb(80,175,207);
+    background-color: white;
+    color:black;
+    background-image: url(../../images/coolio.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    // background-position-x: 75%;
   }
 
   #technologiesContainer {
-    height: 600px;
+    height: auto;
     display: flex;
     justify-content: center;
-    background-color: #e7dede;
+    background: linear-gradient(200deg, white, silver, silver, white);
+    // background: rgba(228, 226, 225, 0.267);
+    padding: 15px;
   }
 
 
@@ -226,12 +307,21 @@ background-repeat: no-repeat;
     justify-content: center;
     display: flex;
     align-items: center;
-    font-size: 55px;
+    // font-size: 55px;
   }
 
   #technologiesHeader {
+    font-size: 50px;
     text-align: center;
+    padding: 3px;
+    color:black;
+    border-bottom: 5px solid;
+    border-image-source: linear-gradient(125deg, black, transparent);
+    border-image-slice: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
   }
+   
 
 
   #technologiesPage img {
@@ -244,6 +334,8 @@ background-repeat: no-repeat;
       justify-content: space-between;
       flex-wrap: wrap;
   }
+
+  
 /* #navLinks {
     display: flex;
     justify-content: ;
@@ -266,8 +358,9 @@ background-repeat: no-repeat;
     display: flex;
 } */
 
+
 #projectsPage {
-    margin: 25px 25px 15px 25px;
+    background-color: rgb(80,175,207);
 }
 
 .project_cards {
@@ -321,10 +414,109 @@ footer {
     padding-top: 14px;
 }
 
+.techIcons {
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.techIcons img {
+    // font-size: 150px;
+    // transition-duration: .2s;
+    // color: black;
+    // color:black;
+    // background-color: transparent;
+    // border-radius: 25%;
+    transition-duration: .1s;
+}
+
+.techIcons img:hover {
+    transform: scale(1.15);
+    transform: translateY(-20px);
+    transition-duration: .1s;
+}
 
 .hide {
     display: none !important;
 }
+
+#htmlLogo {
+    color:black;
+    transition-duration: .2s;
+}
+
+#htmlLogo:hover {
+    color: rgb(228,77,45);
+    transform: scale(1.10);
+    transition-duration: .2s;
+}
+
+#cssLogo {
+    color:black;
+    transition-duration: .2s;
+}
+
+#cssLogo:hover {
+    color: rgb(56,157,215);
+    transform: scale(1.10);
+    transition-duration: .2s;
+}
+
+#javascriptLogo {
+    color:black;
+    transition-duration: .2s;
+}
+
+#javascriptLogo:hover {
+    color: rgb(223, 206, 82);
+    transform: scale(1.10);
+    transition-duration: .2s;
+}
+
+.Quote {
+    font-size: 20px;
+}
+
+.hideMe {
+    opacity: 0;
+}
+
+
+// .fadeIn {
+//     opacity: 1;
+//     transition-duration: .25s;
+// }
+
+/* Underline From Center */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: rgb(216, 220, 221);
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 10%;
+    right: 10%;
+  }
 
 
 .dark-primary-color    { background: #455A64; }
@@ -342,3 +534,4 @@ footer {
 .fresh {background-color: #CCDFCB}
 .watermelon {background-color: #FF6A5C}
 .teal {background-color: #056571}
+
